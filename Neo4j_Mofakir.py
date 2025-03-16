@@ -8,9 +8,9 @@ class Neo4jGraph:
         """Initialize the connection to the Neo4j database."""
         print('Initialize the connection to the Neo4j database NEO4J_URI',NEO4J_URI,' NEO4J_USERNAME ',NEO4J_USERNAME,' NEO4J_PASSWORD ',NEO4J_PASSWORD)
         # self.driver = GraphDatabase.driver('neo4j+s://465ccc57.databases.neo4j.io', auth=('neo4j', 'i_L8bWtvDwJF22938yJ_5wFwbZz7PHmkXYidDbMk1zM'))
-        NEO4J_URI ='neo4j+ssc://360f7910.databases.neo4j.io'  
-        USERNAME ='neo4j'
-        PASSWORD ='naXGVP6u45k-3iLuq8PxvZZNX488t5A3TxNJZG7Wb40'
+        NEO4J_URI ='your uri'  
+        USERNAME ='your username'
+        PASSWORD ='your password'
         try:
            self.driver = GraphDatabase.driver(NEO4J_URI, auth=(USERNAME, PASSWORD))
            print('connected================================================')
