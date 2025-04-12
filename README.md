@@ -21,53 +21,53 @@ neo4j Python driver (pip install neo4j)
 
 Constructor
 
-# Neo4jGraph(NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD)
+### Neo4jGraph(NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD)
 
 Initializes a connection to the Neo4j database using provided credentials.
 
-# Methods
+### Methods
 
-# close()
+### close()
 
 Closes the active connection to the Neo4j database.
 
-# open()
+### open()
 
 (Stub) Intended to open a Neo4j connection (method body is placeholder).
 
-# run_query(query, parameters=None)
+### run_query(query, parameters=None)
 
 Executes a Cypher query with optional parameters.
 
-# create_node(label, properties)
+### create_node(label, properties)
 
 Creates a node with the specified label and properties.
 
-# create_relationship(node1, node2, relation, properties=None)
+### create_relationship(node1, node2, relation, properties=None)
 
 Creates a relationship of the specified type between two nodes.
 
-# update_node(label, node_name, new_properties)
+### update_node(label, node_name, new_properties)
 
 Updates the properties of a node identified by its name and label.
 
-# delete_node(label, node_name)
+### delete_node(label, node_name)
 
 Deletes a node and its relationships from the graph.
 
-# delete_relationship(node1, node2, relation)
+### delete_relationship(node1, node2, relation)
 
 Deletes a specific relationship between two nodes.
 
-# get_nodes(label)
+### get_nodes(label)
 
 Fetches all nodes with the given label and returns their properties.
 
-# get_relationships(relation)
+### get_relationships(relation)
 
 Fetches all relationships of the specified type and returns connected node names.
 
-## Example Usage
+### Example Usage
 neo = Neo4jGraph("bolt://localhost:7687", "neo4j", "password")
 
 neo.create_node("Person", {"name": "Alice"})
@@ -79,7 +79,7 @@ print(relationships)
 
 neo.close()
 
-## Use Cases
+### Use Cases
 
 Knowledge graph construction
 
@@ -89,7 +89,7 @@ Graph-based recommendation systems
 
 Semantic data analysis
 
-## Notes
+### Notes
 
 Ensure your Neo4j server is running and accessible with the correct credentials.
 
